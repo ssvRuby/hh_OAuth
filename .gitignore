@@ -1,7 +1,10 @@
 # My IGNOR
 hh_const.py
+
+# ENVIRONMENT
 hh_env/
 
+# Mac OS File
 .DS_Store
 
 # Byte-compiled / optimized / DLL files
