@@ -16,7 +16,7 @@ https://hh.ru/oauth/authorize?response_type=code&client_id=LOTHHN3BSET0I7IQNF3N5
 Когда пользователь переходит по этой ссылке, для него на нашей стороне генерируется специальный код. И наш сайт перенаправляет пользователя обратно в ваше приложение (по redirect URI, который был указан при регистрации приложения), добавив к адресу вашего приложения параметр, содержащий код. Например:
 http://yourapphost/?code=J2CO4TM7PK58NNVFCJSLPMML15IKQERD5CT2L8VGK82Q333ILAKQ28BPURIO1LG8
 
-После этого вы вытаскиваете из этого адреса code и используете его для получения токена, сделав POST-запрос в API, передав code, client_id и client_secret.
+### После этого вы вытаскиваете из этого адреса code и используете его для получения токена, сделав POST-запрос в API, передав code, client_id и client_secret.
 curl -k -X POST -H 'User-Agent: api-test-agent' -d 'grant_type=authorization_code&client_id=LOTHHN3BSET0I7IQNF3N5I0362AE1D14I6M74CAIQ5H49F7MT4PLMTVV7JTOA6QA&client_secret=JS33UVG3J6JANNEATPND57BME23BKDCPP2UH1NB0C21HUMNGS5T71AVP6P24E0EI&code=J2CO4TM7PK58NNVFCJSLPMML15IKQERD5CT2L8VGK82Q333ILAKQ28BPURIO1LG8' https://hh.ru/oauth/token
 
 В ответ вы получите json, содержащий токен (поле access_token):

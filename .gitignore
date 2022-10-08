@@ -1,5 +1,6 @@
 # My IGNOR
 hh_const.py
+user_token_params.json
 
 # ENVIRONMENT
 hh_env/
