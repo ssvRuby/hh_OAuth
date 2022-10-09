@@ -1,6 +1,8 @@
 # My IGNOR
 hh_const.py
 user_token_params.json
+vacancy_log.txt
+search_url_list.txt
 
 # ENVIRONMENT
 hh_env/
